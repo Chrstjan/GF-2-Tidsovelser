@@ -16,42 +16,43 @@
     <title>GF2 Øvelser</title>
     <script src="./Assets/js/form.js" defer></script>
     <script src="./Assets/js/cookie.js" defer></script>
+    <script src="./Assets/js/gallery.js" defer></script>
   </head>
   <body>
     <div class="main-container">
       <header></header>
       <main>
+        <div id="cookie-container" class="cookie-modal">
+          <h2>Cookie Politik</h2>
+          <p>
+            Denne hjemmeside bruger cookies for at forbedre din oplevelse. Ved
+            at fortsætte accepterer du vores brug af cookies.Vi bruger cookies
+            til at analysere webstedstrafik, tilpasse indhold og annoncer, og
+            forbedre brugeroplevelsen.
+          </p>
+
+          <section>
+            <span class="checkbox-container">
+              <input type="checkbox" id="prom" checked />
+              <label for="req">promotion</label>
+            </span>
+            <span class="checkbox-container">
+              <input type="checkbox" id="stat" checked />
+              <label for="stat">statesitk</label>
+            </span>
+
+            <span class="checkbox-container">
+              <input type="checkbox" id="func" checked />
+              <label for="func">funktion</label>
+            </span>
+
+            <div class="cookie-btn-container">
+              <span class="cookie-all">Alle</span>
+              <span class="cookie-selected">Valgte</span>
+            </div>
+          </section>
+        </div>
         <section class="form-section">
-          <div id="cookie-container" class="cookie-modal">
-            <h2>Cookie Politik</h2>
-            <p>
-              Denne hjemmeside bruger cookies for at forbedre din oplevelse. Ved
-              at fortsætte accepterer du vores brug af cookies.Vi bruger cookies
-              til at analysere webstedstrafik, tilpasse indhold og annoncer, og
-              forbedre brugeroplevelsen.
-            </p>
-
-            <section>
-              <span class="checkbox-container">
-                <input type="checkbox" id="prom" checked />
-                <label for="req">promotion</label>
-              </span>
-              <span class="checkbox-container">
-                <input type="checkbox" id="stat" checked />
-                <label for="stat">statesitk</label>
-              </span>
-
-              <span class="checkbox-container">
-                <input type="checkbox" id="func" checked />
-                <label for="func">funktion</label>
-              </span>
-
-              <div class="cookie-btn-container">
-                <span class="cookie-all">Alle</span>
-                <span class="cookie-selected">Valgte</span>
-              </div>
-            </section>
-          </div>
           <form id="myForm">
             <fieldset class="form-fieldset">
               <label for="fName">Fornavn</label>
@@ -78,6 +79,28 @@
               </fieldset>
             </fieldset>
           </form>
+        </section>
+
+        <section class="gallery" id="gallery">
+          <!--Made with JavaScript-->
+          <figure class="gallery-figure">
+            <header><h1>Gallery</h1></header>
+            <div class="arrows-container">
+              <img
+                id="forwards-arrow"
+                src="./Assets/images/gallery/Arrow.png"
+              />
+              <img
+                id="backwards-arrow"
+                src="./Assets/images/gallery/Arrow.png"
+              />
+            </div>
+            <img
+              id="gallery-img"
+              src="./Assets/images/gallery/Dinny-01.jpg"
+              alt="gallery image"
+            />
+          </figure>
         </section>
       </main>
       <footer></footer>

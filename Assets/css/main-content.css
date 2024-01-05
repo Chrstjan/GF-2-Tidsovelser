@@ -51,12 +51,13 @@
 
 .cookie-modal {
   animation: cookieAnimation 1.2s 1 forwards;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #33333399;
+  z-index: 999;
 }
 
 body.dom-noscroll {
@@ -109,4 +110,65 @@ body.dom-noscroll {
 
 .cookie-selected:hover {
   background: darkcyan;
+}
+
+.gallery-figure {
+  position: relative;
+}
+
+.gallery-figure header {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 30px;
+}
+
+.gallery .gallery-figure img {
+  width: 100%;
+}
+
+.arrows-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-figure .arrows-container img {
+  width: 20vw;
+  position: absolute;
+  top: 70%;
+  cursor: pointer;
+}
+
+.arrows-container #forwards-arrow {
+  left: 70%;
+  transform: rotate(-90deg);
+}
+
+.arrows-container #backwards-arrow {
+  left: 2%;
+  transform: rotate(90deg);
+}
+
+@media (min-width: 1200px) {
+  .gallery-figure header {
+    top: 0;
+  }
+
+  .gallery-figure img {
+    width: 100%;
+  }
+
+  .gallery-figure .arrows-container img {
+    width: 10vw;
+  }
+
+  .arrows-container #forwards-arrow {
+    left: 90%;
+  }
+
+  .arrows-container #backwards-arrow {
+    left: 0;
+  }
 }
