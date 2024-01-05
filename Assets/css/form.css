@@ -1,0 +1,17 @@
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section #myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section form .form-fieldset {
+  display: flex;
+  flex-direction: column;
+}

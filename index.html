@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                        <!--Different stylesheet for sections-->
-    <link rel="stylesheet" href="./Assets/css/main.css">
+    <!--Different stylesheet for sections-->
+    <link rel="stylesheet" href="./Assets/css/main.css" />
 
-                        <!--Google fonts & fontawesome icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--Google fonts & fontawesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
 
-    <title>Html Boilerplate</title>
-</head>
-<body>
-    <header></header>
-    <main>
-        <section>
-            
+    <title>GF2 Øvelser</title>
+    <script src="./Assets/js/form.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header></header>
+      <main>
+        <section class="form-section">
+          <form id="myForm">
+            <fieldset class="form-fieldset">
+              <label for="fName">Fornavn</label>
+              <input type="text" placeholder="John" id="fName" />
+
+              <label for="lName">Efternavn</label>
+              <input type="text" placeholder="Doe" id="lName" />
+
+              <label for="email">Email</label>
+              <input type="email" placeholder="None@fake.com" id="email" />
+
+              <label for="password">Password</label>
+              <input type="password" placeholder="***********" id="password" />
+
+              <label for="passwordRepeat">Repeat Password</label>
+              <input
+                type="password"
+                placeholder="repeat password"
+                id="passwordRepeat"
+              />
+
+              <fieldset class="btn-container">
+                <input type="submit" id="submit-btn" value="Submit" />
+              </fieldset>
+            </fieldset>
+          </form>
         </section>
-    </main>
-    <footer></footer>
-    <script src="./Assets/js/app.js"></script>
-</body>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>
