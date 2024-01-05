@@ -15,12 +15,43 @@
 
     <title>GF2 Øvelser</title>
     <script src="./Assets/js/form.js" defer></script>
+    <script src="./Assets/js/cookie.js" defer></script>
   </head>
   <body>
     <div class="main-container">
       <header></header>
       <main>
         <section class="form-section">
+          <div id="cookie-container" class="cookie-modal">
+            <h2>Cookie Politik</h2>
+            <p>
+              Denne hjemmeside bruger cookies for at forbedre din oplevelse. Ved
+              at fortsætte accepterer du vores brug af cookies.Vi bruger cookies
+              til at analysere webstedstrafik, tilpasse indhold og annoncer, og
+              forbedre brugeroplevelsen.
+            </p>
+
+            <section>
+              <span class="checkbox-container">
+                <input type="checkbox" id="prom" checked />
+                <label for="req">promotion</label>
+              </span>
+              <span class="checkbox-container">
+                <input type="checkbox" id="stat" checked />
+                <label for="stat">statesitk</label>
+              </span>
+
+              <span class="checkbox-container">
+                <input type="checkbox" id="func" checked />
+                <label for="func">funktion</label>
+              </span>
+
+              <div class="cookie-btn-container">
+                <span class="cookie-all">Alle</span>
+                <span class="cookie-selected">Valgte</span>
+              </div>
+            </section>
+          </div>
           <form id="myForm">
             <fieldset class="form-fieldset">
               <label for="fName">Fornavn</label>

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .form-section #myForm {
@@ -36,4 +37,76 @@
 .btn-container input {
   padding: 0.6rem 1.1rem;
   cursor: pointer;
+}
+
+@keyframes cookieAnimation {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.cookie-modal {
+  animation: cookieAnimation 1.2s 1 forwards;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #33333399;
+}
+
+body.dom-noscroll {
+  overflow: hidden;
+}
+
+.cookie-modal h2,
+.cookie-modal p,
+.cookie-modal section label {
+  color: #fff;
+}
+
+.cookie-modal section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cookie-modal section .checkbox-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cookie-modal section .cookie-btn-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cookie-all,
+.cookie-selected {
+  padding: 0.4rem 1rem;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cookie-btn-container .cookie-all {
+  background: lightblue;
+}
+
+.cookie-all:hover {
+  background: blue;
+}
+
+.cookie-btn-container .cookie-selected {
+  background: darkblue;
+}
+
+.cookie-selected:hover {
+  background: darkcyan;
 }
